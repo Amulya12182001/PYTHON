@@ -2,7 +2,7 @@ import streamlit as st
 import json
 import requests
 
-st.title('Predict Median House Pricing')
+st.title('Predic medical insurance charges')
 
 
 with open('input_options.json') as f:
