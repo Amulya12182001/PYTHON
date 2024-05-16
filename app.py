@@ -9,7 +9,7 @@ with open('input_options.json') as f:
     side_bar_options = json.load(f)
     options = {}
     for key, value in side_bar_options.items():
-        if key in ['ocean_proximity']:
+        if key in ['charges']:
             options[key] = st.sidebar.selectbox(key, value)
         else:
             min_val, max_val = value
