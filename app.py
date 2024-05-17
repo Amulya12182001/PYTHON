@@ -2,7 +2,7 @@ import streamlit as st
 import json
 import requests
 
-st.title('Predic medical insurance charges')
+st.title('Predict medical insurance charges')
 
 
 with open('input_options.json') as f:
@@ -24,7 +24,7 @@ if st.button('Predict'):
 
     payload = json.dumps({'inputs': options})
     response = requests.post(
-        url=f"http://159.203.68.179:5001/invocations",
+        url=f"http://134.209.38.91/invocations",
         data=payload,
         headers={"Content-Type": "application/json"},
     )
