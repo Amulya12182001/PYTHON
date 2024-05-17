@@ -4,7 +4,7 @@ import numpy as np
 import pickle
 
 # Load the inputs from the JSON file
-with open('inputs.json', 'r') as f:
+with open('input_options.json', 'r') as f:
     inputs = json.load(f)
 
 # Load the model (replace 'model.pkl' with your actual model file)
